@@ -1,18 +1,6 @@
 {
-  "projectName": "escala-cafe",
-  "buildCommand": "",
   "framework": "static",
   "public": true,
   "trailingSlash": false,
-  "cleanUrls": true,
-  "routes": [
-    {
-      "src": "^/(?!(?:assets|css|js|.*\\.\\w+)$)(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "GOOGLE_SHEET_ID": "@google_sheet_id",
-    "GOOGLE_API_KEY": "@google_api_key"
-  }
+  "cleanUrls": true
 }
