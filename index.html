@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala de Café - Novembro/2025</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-main">
+        <!-- Header -->
+        <header class="header">
+            <div id="inactiveNotice" class="inactive-notice" style="display: none;">
+                ⏳ Escala em modo <strong>INATIVO</strong> | Começa em <strong id="startDate">01/11/2025</strong> | Primeiro: <strong id="firstPerson">--</strong>
+            </div>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="coffee-icon">☕</div>
+                    <div>
+                        <h1 class="main-title">Escala de Café</h1>
+                        <p class="subtitle">Novembro/2025</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="info-badge">Atual: <span id="current-date">--</span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Filters -->
+            <section class="filters-section">
+                <button class="filter-btn active" data-filter="all">
+                    <span>📅</span> Todas as Semanas
+                </button>
+                <button class="filter-btn" data-filter="week-1">
+                    <span>1️⃣</span> Semana 1
+                </button>
+                <button class="filter-btn" data-filter="week-2">
+                    <span>2️⃣</span> Semana 2
+                </button>
+                <button class="filter-btn" data-filter="week-3">
+                    <span>3️⃣</span> Semana 3
+                </button>
+                <button class="filter-btn" data-filter="week-4">
+                    <span>4️⃣</span> Semana 4
+                </button>
+            </section>
+
+            <!-- Today's Task -->
+            <section class="today-section" id="today-section">
+                <div class="today-card">
+                    <h2>🎯 Próxima Escala</h2>
+                    <div class="today-content">
+                        <p class="loading-text">Carregando...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weeks Container -->
+            <div class="weeks-container" id="weeks-container">
+                <!-- Weeks will be inserted here by JavaScript -->
+            </div>
+        </main>
+
+        <!-- Modal para Settings -->
+        <div class="modal" id="settingsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>⚙️ Configurações</h2>
+                    <button class="close-btn" id="closeModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: center; margin-bottom: 20px;">Configurações do website</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">📱 Notificações SMS: Será implementado em breve com backend.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary" id="closeSettingsBtn">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Button -->
+        <button class="settings-btn" id="settingsBtn">⚙️</button>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

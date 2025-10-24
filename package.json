@@ -1,0 +1,22 @@
+{
+  "name": "escala-cafe",
+  "version": "1.0.0",
+  "description": "Website responsivo para organizar a escala de café do Hub CriCare",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx http-server . -p 3000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "coffee",
+    "schedule",
+    "responsive",
+    "google-sheets"
+  ],
+  "author": "CriCare Hub",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
